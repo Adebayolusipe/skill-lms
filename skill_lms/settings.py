@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "users",
     "content",
     "courses",
+    "compressor",
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_URL = '/signin/'
+
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True

@@ -25,10 +25,11 @@ SECRET_KEY = "django-insecure-719)h7&+yet9#!e9k#eaq5@gb#%p!^@4fb#k)x-*abf$j$-6-d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'skill-lms.onrender.com', 'skill-lms-8iss.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'skill-lms-final.onrender.com', 'skill-lms.onrender.com', 'skill-lms-8iss.onrender.com']
 CSRF_TRUSTED_ORIGINS = [
     'https://skill-lms.onrender.com',
     'https://skill-lms-8iss.onrender.com',
+    'https://skill-lms-final.onrender.com',
 ]
 
 # Application definition
